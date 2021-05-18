@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h2 id="number"></h2>
+<p id="result"></p>
+<script>
+    let number = +prompt("Nhập vào số lượng các số nguyên tố đầu tiên")
+    let count = 0
+    let N = 2
+    document.getElementById("number").innerHTML = +number+ " số nguyên tố đầu tiên là:"
+    while (count < number) {
+        if (isPrimeNumber()) {
+            document.getElementById("result").innerHTML += N + " "
+            count++;
+        }
+        N++
+    }
+    function isPrimeNumber(num) {
+        let check = true
+        for (let i = 2; i <= num/2; i++) {
+            if (num % i == 0) {
+                check = false;
+                break;
+            }
+        }
+        return check
+    }
+</script>
+</body>
+</html>

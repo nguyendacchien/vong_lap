@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let count =0
+  let a=0
+  let b=1
+  for (let i =0;i<10;i++){
+    if (count<10){
+      reusult=a+b
+      if (reusult%5==0){
+        document.write( 'số fibonacci đầu tiên chia hết cho 5 = '+reusult+', ')
+          break
+        }
+      a=b;
+      b=reusult;
+    }
+
+  }
+</script>
+</body>
+</html>

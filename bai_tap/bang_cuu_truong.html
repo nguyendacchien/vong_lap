@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset style="width: 800px; background-color: wheat">
+    <legend style="color: red"> Bảng Cửu Trương</legend>
+<script>
+
+    let sout;
+    sout = "<table border='2'; style='background-color: pink ; color: white'>"
+    for (i = 2; i <= 9; i++) {
+        sout = sout + "<tr>";
+        for (j = 1; j <= 10; j++) {
+            sout = sout + "<td style='width: 80px'>" + i +'x'+ j +'= '+ j*i + "</td>";
+        }
+        sout = sout + "</tr>";
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+
+</script>
+</fieldset>
+</body>
+</html>

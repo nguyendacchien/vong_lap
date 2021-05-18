@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = prompt('bạn muốn tính tổng của bao nhiêu số fibonacci N')
+  let count =0
+  let a=0
+  let b=1
+  let sum=0
+  for (let i =0;i<N;i++){
+    if (count<N){
+      reusult=a+b
+      sum +=a
+      a=b;
+      b=reusult;
+    }
+  }
+  document.write('tổng 20 đầu tiên trong dãy fibonaci = '+sum)
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = +prompt('số tháng')
+    let money = +prompt('nhập số tiền vay')
+    let percent = 10 / 100
+    for (i = 1; i <= N; i++) {
+        money = money + (money * percent)
+    }
+    document.write('bạn có '+ money.toFixed(2)+ ' sau '+N+ 'tháng')
+</script>
+</body>
+</html>

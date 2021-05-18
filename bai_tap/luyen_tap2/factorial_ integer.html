@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number =prompt('nhập số nguyên dương')
+    let N=1
+    if (number<0){
+        alert('không tồn tại');
+    }else {
+        factorial()
+    }
+    function factorial() {
+    for (i=1;i<=number;i++){
+        N=N*i
+    }
+    document.write(number+' giai thừa: = '+N)
+
+    }
+</script>
+</body>
+</html>
